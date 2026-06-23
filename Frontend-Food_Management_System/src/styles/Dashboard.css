@@ -1,0 +1,186 @@
+.dashboard-page {
+    min-height: 100vh;
+    padding: 50px;
+    background: #F5F7FA;
+}
+
+/* Header */
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.dashboard-header h1 {
+    font-size: 42px;
+    color: #2E7D32;
+    margin-bottom: 20px;
+}
+
+.dashboard-header p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.dashboard-header img {
+    width: 500px;
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.15);
+}
+
+/* Statistics */
+
+.stats-container {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.stat-card {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-6px);
+}
+
+.stat-card h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    color: #555;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Stat Colors */
+
+.stat-card:nth-child(1) h2 {
+    color: #FF9800;
+}
+
+.stat-card:nth-child(2) h2 {
+    color: #2E7D32;
+}
+
+.stat-card:nth-child(3) h2 {
+    color: #F57C00;
+}
+
+.stat-card:nth-child(4) h2 {
+    color: #1976D2;
+}
+
+/* Buttons */
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.dashboard-btn {
+    text-decoration: none;
+    background: #FF9800;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.dashboard-btn:hover {
+    background: #f57c00;
+}
+
+.green-btn {
+    background: #2E7D32;
+}
+
+.green-btn:hover {
+    background: #1b5e20;
+}
+
+/* Recent Donations */
+
+.recent-foods {
+    margin-top: 60px;
+}
+
+.recent-foods h2 {
+    color: #2E7D32;
+    margin-bottom: 25px;
+}
+
+.recent-food-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.recent-food-card:hover {
+    transform: translateY(-3px);
+}
+
+.recent-food-card h3 {
+    color: #FF9800;
+    margin-bottom: 10px;
+}
+
+.recent-food-card p {
+    color: #555;
+    margin-bottom: 6px;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .dashboard-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dashboard-header img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .dashboard-page {
+        padding: 25px;
+    }
+
+    .dashboard-header h1 {
+        font-size: 32px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .dashboard-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
