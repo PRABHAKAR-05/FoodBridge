@@ -1,17 +1,14 @@
-# Frontend
-frontend/node_modules/
-frontend/dist/
-frontend/.env.local
-frontend/.env
-
 # Backend
-backend/node_modules/
-backend/.env
-backend/dist/
+Backend-Food_Management_System/node_modules/
+Backend-Food_Management_System/.env
+Backend-Food_Management_System/dist/
+
+# Frontend
+Frontend-Food_Management_System/node_modules/
+Frontend-Food_Management_System/.env.local
+Frontend-Food_Management_System/dist/
 
 # General
 .DS_Store
 Thumbs.db
 *.log
-.vscode/
-.idea/# Initialize git
